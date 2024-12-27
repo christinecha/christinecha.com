@@ -1,11 +1,6 @@
 :root {
   --background-color: black;
   --text-color: white;
-
-  body#blog-post {
-    --background-color: white;
-    --text-color: black;
-  }
 }
 
 body {
@@ -74,19 +69,16 @@ h3 {
 
 .p-small() {
   font-size: 14px;
-  line-height: 2;
+  line-height: 1.4em;
 
   @media @tablet {
-    font-size: 2vw;
+    font-size: 16px;
   }
   @media @desktop {
-    font-size: 1.4vw;
+    font-size: 20px;
   }
-  @media @desktop-xl {
-    font-size: 1.2vw;
-  }
-  @media @desktop-xxl {
-    font-size: 1vw;
+  @media @desktop-lg {
+    font-size: 24px;
   }
 }
 
@@ -94,60 +86,19 @@ p,
 li,
 a {
   font-size: 22px;
-  font-weight: 100;
+  font-weight: 300;
   line-height: 1.4em;
-  letter-spacing: 0.05em;
-
-  transition: font-size 200ms ease-in-out;
+  letter-spacing: 0.02em;
 
   @media @tablet {
-    font-size: 3vw;
-    font-weight: 300;
-    letter-spacing: 0.02em;
+    font-size: 28px;
   }
-  @media @desktop {
-    font-size: 2.8vw;
-  }
-  @media @desktop-xl {
-    font-size: 2.5vw;
-  }
-  @media @desktop-xxl {
-    font-size: 2vw;
+  @media @desktop-lg {
+    font-size: 35px;
   }
 
-  .small {
+  &.small {
     .p-small();
-  }
-}
-
-.blog-post {
-  max-width: 800px;
-  margin: auto;
-
-  p,
-  li,
-  a {
-    .p-small();
-  }
-
-  blockquote {
-    margin-left: 80px;
-    padding-left: 20px;
-    border-left: 1px solid var(--text-color);
-  }
-
-  h2 {
-    font-size: 16px;
-    margin-top: 5em;
-  }
-
-  img {
-    max-width: 100%;
-  }
-
-  code {
-    font-family: monospace;
-    color: blue;
   }
 }
 

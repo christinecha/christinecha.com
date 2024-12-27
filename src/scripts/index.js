@@ -38,18 +38,18 @@ const updateView = () => {
 const projects = $projects.map(($project) => {
   const project = { $el: $project };
 
-  if (vw >= 768) {
-    $project.addEventListener("mouseenter", handleMouseEnter);
-    $project.addEventListener("mouseleave", handleMouseLeave);
+  // if (vw >= 768) {
+  //   $project.addEventListener("mouseenter", handleMouseEnter);
+  //   $project.addEventListener("mouseleave", handleMouseLeave);
 
-    const $title = $project.getElementsByTagName("A")[0];
-    const $body = $project.getElementsByTagName("P")[0];
+  //   const $title = $project.getElementsByTagName("A")[0];
+  //   const $body = $project.getElementsByTagName("P")[0];
 
-    project.title = new Jumbler($title);
-    project.body = new Jumbler($body);
-  } else {
-    project.$el.classList.add("is-active");
-  }
+  //   project.title = new Jumbler($title);
+  //   project.body = new Jumbler($body);
+  // } else {
+  project.$el.classList.add("is-active");
+  // }
 
   return project;
 });

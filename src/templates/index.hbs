@@ -3,131 +3,155 @@
 <main>
   {{> partials/header.hbs }}
 
-  <section class="new">
-    <h2>New • January 2021</h2>
-    <p>
-      <a href="https://twitch.tv/madebycha" target="_blank">
-        @madebycha: live on twitch</a
-      >
-      <br />
-      <span class="small" style="max-width: 650px; margin-top: 20px">
-        I've started streaming! Live coding, Q&A, and some other random
-        things.
-        <a
-          href="https://discord.gg/phpkY4NaY7"
-          class="small"
-          target="_blank"
-        >Join my Discord</a>
-        for all the fun 👯‍♀️
-      </span>
-    </p>
-  </section>
-
   <section class="bio">
-    <h2>Bio</h2>
+    <h2>About</h2>
     <p>
-      Hi! You can call me Cha. ✌️ I'm an art school dropout and self-taught
-      programmer.
+      Hi, I'm Christine. I like to make cool things and solve interesting problems.
       <br /><br />
-      Currently, I work as a founding engineer at <a href="https://highnote.fm">Highnote.fm</a>. I've previously worked at places like 
-      <a href="https://shortcut.com">Shortcut</a>, <a
+      I've been developing web applications for the past 10 years at places like <a href="https://highnote.fm">Highnote</a>,
+      <a href="https://shortcut.com">Shortcut</a>, and <a
         href="https://squarespace.com"
         >Squarespace</a
-      >, and <a href="https://wix.com">Wix</a>, and am a proud alum of the
+      >, among others. I'm a proud alum of the 
       <a href="https://recurse.com">Recurse&nbsp;Center</a>. <br /><br />
-      I've been lucky to work on some fun projects with some smart people. I
-      live in New York and spend most of my time writing code and playing
+      When I'm not on the computer I'm usually playing
       table&nbsp;tennis.
-      <br /><br />
-      I'm easy to find. Drop me an email or come join one of my Twitch
-      streams! Links below.
     </p>
   </section>
 
-  <section class="social-links">
-    <a href="https://twitch.tv/madebycha" target="_blank">Twitch</a><br />
-    <a href="https://github.com/christinecha" target="_blank">GitHub</a
-    ><br />
-    <a href="https://twitter.com/madebycha" target="_blank">Twitter</a
-    ><br />
-    <a href="https://discord.gg/phpkY4NaY7" target="_blank">Discord</a
-    ><br />
-    <br /><a href="mailto:hello@christinecha.com" target="_blank">Email</a>
-  </section>
 
-  <section class="projects-wrapper">
-    <h2>Projects</h2>
+  <section>
+    <h2>Active Projects</h2>
 
     <div class="projects">
       <article class="project">
-        <a href="https://leaguebotrl.com" target="_blank"> League Bot </a>
+        <a href="https://usestadium.com" target="_blank">STADIUM</a>
         <p>
-          A Discord bot to help manage private 1s, 2s, and 3s leaderboards.
+          The competition platform for racket sports.
+        </p>
+      </article>
+
+      <article class="project">
+        <a href="https://leaguebotrl.com" target="_blank">ttshirt.club</a>
+        <p>
+          Printing my own table tennis shirt designs.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section>
+    <h2>Consulting</h2>
+    <p class="small">I offer design and development services on a retainer basis. Limited availability; email me for more info.</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <div class="social-links">
+      <a href="mailto:hello@christinecha.com" target="_blank">Email</a>
+      <a href="https://www.linkedin.com/in/christinechanyc/" target="_blank">LinkedIn</a>
+      <a href="https://github.com/christinecha" target="_blank">GitHub</a
+      >
+      <a href="https://twitch.tv/madebycha" target="_blank">Twitch</a>
+      </div>
+  </section>
+
+  <section>
+    <h2>Archive</h2>
+
+    <div class="archive">
+      <article class="project">
+        <a class="small" href="https://highnote.fm/" target="_blank">Highnote</a>
+        <h2>Founding Software Engineer</h2>
+        <p class="small">
+          The best way to share and discuss audio.
+        </p>
+      </article>
+
+      <article class="project">
+        <a class="small" href="https://pingpod.com/" target="_blank">PingPod</a>
+        <h2>Initial Design, Logo, and Development</h2>
+        <p class="small">A fully automated table tennis space, open 24/7.</p>
+      </article>
+
+       <article class="project">
+        <a class="small" href="https://can-i-go-there.com" target="_blank">Can I Go There?</a>
+        <h2>Personal Project</h2>
+        <p class="small">Check visa requirements for any passport to any destination.</p>
+      </article>
+
+      <article class="project">
+        <a class="small" href="https://leaguebotrl.com" target="_blank"> League Bot </a>
+        <h2>Personal Project</h2>
+        <p class="small">
+          A Discord bot to run Rocket League leaderboards.
         </p>
       </article>
 
       <article class="project">
         <a
+         class="small"
           href="https://skillsmatter.com/skillscasts/11753-how-to-use-small-projects-to-learn-anything"
           target="_blank"
         >
           Use Small Projects to&nbsp;Learn&nbsp;(Anything)
         </a>
-        <p>A 30-minute talk at FullStackCon 2018.</p>
+        <h2>Conference Talk</h2>
+        <p
+         class="small">A 30-minute talk at FullStackCon 2018.</p>
+      </article>
+     
+      <article class="project">
+        <a class="small"href="https://www.squarespace.com" target="_blank">Squarespace.com</a>
+        <h2>Software Engineer, Front Site + Templates</h2>
+        <p class="small">All-in-one website building platform.</p>
       </article>
 
       <article class="project">
-        <a href="https://can-i-go-there.com" target="_blank"
-          >Can I Go There?</a
-        >
-        <p>Check visa requirements for any passport to any destination.</p>
+        <a class="small" href="https://www.andreribeiro.co" target="_blank">Andre Ribeiro</a>
+        <h2>Collaboration</h2>
+        <p class="small" >Portfolio website for designer Andre Ribeiro.</p>
       </article>
 
       <article class="project">
-        <a href="https://www.squarespace.com" target="_blank"
-          >Squarespace.com</a
-        >
-        <p>The Squarespace home page, a.k.a. Front Site (2016 - 2018).</p>
-      </article>
-
-      <article class="project">
-        <a href="https://www.andreribeiro.co" target="_blank"
-          >Andre Ribeiro</a
-        >
-        <p>Portfolio website for designer Andre Ribeiro.</p>
-      </article>
-
-      <article class="project">
-        <a href="https://www.squarespace.com/timeline" target="_blank"
-          >Squarespace Timeline</a
-        >
-        <p>The Squarespace 15th Anniversary Timeline.</p>
+        <a  class="small" href="https://www.squarespace.com/timeline" target="_blank">Squarespace Timeline</a>
+        <h2>Software Engineer, Special Project</h2>
+        <p  class="small">The Squarespace 15th Anniversary Timeline.</p>
       </article>
 
       <article class="project">
         <a
+         class="small"
           href="https://github.com/christinecha/choreographer-js"
           target="_blank"
-          >Choreographer.js</a
-        >
-        <p>A simple library to take care of complicated animations.</p>
+        >Choreographer.js</a>
+        <h2>Personal Project</h2>
+        <p
+         class="small">A simple library to take care of complicated animations.</p>
       </article>
 
       <article class="project">
         <a
+         class="small"
           href="https://christinecha.github.io/3d-css-cubes/"
           target="_blank"
-          >3D CSS Cubes</a
-        >
-        <p>A rotating grid of 3d (pure CSS) cubes.</p>
+        >3D CSS Cubes</a>
+        <h2>Personal Project</h2>
+        <p
+         class="small">A rotating grid of 3d (pure CSS) cubes.</p>
       </article>
     </div>
   </section>
 
+
+  
+  <section>
   <h3 class="credit">
     designed in collaboration with
     <a href="https://andreribeiro.co">Andre Ribeiro</a>
   </h3>
+  </section>
+  
 </main>
 
 {{> partials/html-end.hbs }}

@@ -1,8 +1,10 @@
 nav {
   width: 100%;
   padding: 18px 0;
+
   @media @tablet {
     padding: 50px 0;
+    padding-bottom: 0;
   }
 
   ul {
@@ -18,141 +20,99 @@ nav {
   }
 }
 
-.bio {
-  margin-top: 100px;
-  @media @tablet {
-    margin-top: 10vw;
+section {
+  padding-top: 150px;
+
+  &:first-of-type {
+    padding-top: 100px;
   }
 
+  h2 {
+    margin-bottom: 30px;
+  }
+}
+
+.bio {
   p {
-    width: 92%;
-    max-width: 500px;
+    width: 100%;
+    max-width: 450px;
 
     @media @tablet {
-      max-width: 65vw;
+      max-width: 550px;
     }
     @media @desktop-lg {
-      max-width: 45vw;
+      max-width: 720px;
     }
   }
 }
 
 .social-links {
-  margin-top: 100px;
-  @media @tablet {
-    margin-top: 8vw;
-  }
+  margin: -10px;
 
   a {
+    margin: 10px;
     display: inline-block;
-    margin-bottom: 20px;
-    margin-bottom: 3.5vw;
-    @media @desktop {
-      margin-bottom: 2vw;
-    }
-  }
-}
-
-.projects-wrapper {
-  margin-top: 100px;
-  @media @tablet {
-    margin-top: 8vw;
-  }
-
-  h2 {
-    margin-bottom: 20px;
-    @media @tablet {
-      margin-bottom: 50px;
-    }
   }
 }
 
 .projects {
   display: flex;
-  flex-direction: column;
-  margin-bottom: 10vmin;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: -20px;
 
   @media @tablet {
-    flex-direction: row;
-    flex-wrap: wrap;
+    margin: -50px;
   }
-}
 
-.project {
-  width: 100%;
-  max-width: 350px;
-  margin-bottom: 5vw;
-  cursor: pointer;
+  .project {
+    margin: 20px;
+    max-width: 300px;
 
-  opacity: 0.4;
-  transition: opacity 300ms ease-in-out;
-
-  &.is-active {
-    opacity: 1;
+    @media @tablet {
+      margin: 50px;
+    }
 
     a {
-      border-bottom: 1px solid #fff;
+      display: inline-block;
+      margin-bottom: 20px;
     }
 
-    span {
-      transition: transform 300ms ease-in-out;
-    }
-  }
-
-  @media @tablet {
-    width: 50%;
-    max-width: 35vw;
-
-    margin-right: 10vw;
-
-    &:nth-child(even) {
-      margin-right: auto;
-    }
-  }
-
-  @media @desktop-lg {
-    width: 33.3%;
-    max-width: 24vw;
-
-    margin-right: 8vw;
-
-    &:nth-child(even) {
-      margin-right: 8vw;
-    }
-    &:nth-child(3n + 3) {
-      margin-right: auto;
-    }
-  }
-
-  span {
-    display: inline-block;
-    transition: transform 500ms ease-in-out;
-
-    &.space {
-      width: 1ch;
-      display: inline;
-    }
-  }
-
-  a {
-    border-bottom: 1px solid rgba(255, 255, 255, 0);
-    transition: border-color 300ms ease-in-out;
-  }
-
-  p {
-    margin-top: 20px;
-  }
-
-  p,
-  p span {
-    font-weight: 100;
-    color: rgba(255, 255, 255, 0.4);
-
-    .force-opaque {
-      color: white;
+    p {
+      opacity: 0.5;
+      margin: 0;
     }
   }
 }
+
+.archive {
+  .project {
+    margin-bottom: 10px;
+
+    @media @tablet {
+      margin-bottom: 20px;
+    }
+
+    a {
+      display: inline-block;
+      margin-bottom: 6px;
+
+      @media @tablet {
+        margin-bottom: 10px;
+      }
+    }
+
+    h2 {
+      margin: 5px 0;
+    }
+
+    p {
+      opacity: 0.5;
+      margin: 0;
+    }
+  }
+}
+
 
 .credit,
 .credit a {
